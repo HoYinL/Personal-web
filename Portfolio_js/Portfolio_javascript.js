@@ -53,10 +53,10 @@ window.addEventListener("scroll", () => {
 let main = document.getElementById("content");
 
 window.addEventListener("load", ()=>{
-    let workplace = document.getElementById("workplace");
-    let workplace_li = workplace.querySelectorAll(`li`);
-
 $(document).ready(function() {
+let workplace = document.getElementById("workplace");
+let workplace_li = workplace.querySelectorAll(`li`);
+    
 let experience_sec = document.getElementById("experience")
 let includedContent = document.getElementById(`includedContent`);
 let workplace_light = document.getElementById(`workplace-light`);
