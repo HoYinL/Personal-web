@@ -14,7 +14,7 @@ function scroll(){
 
 let bodies = document.getElementsByTagName(`body`)[0];
 
-/*let anime_interface = document.createElement(`div`);
+let anime_interface = document.createElement(`div`);
 let loading_anime = document.createElement('div');
 let loading_svg = document.createElementNS("http://www.w3.org/2000/svg", `svg`);
 loading_svg.setAttributeNS(null, `height`, `150`)
@@ -43,7 +43,7 @@ document.addEventListener(`readystatechange`, () => {
     setTimeout(() => {
         anime_interface.remove();
     }, 500)
-})*/
+})
 //-----------------------------------------------------------------------------------------//
 /*
 result: 1. click -> 2. scroll to specific section
