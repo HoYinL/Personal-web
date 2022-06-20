@@ -34,6 +34,10 @@ loading_anime.classList.add(`loading-anime`);
 bodies.prepend(anime_interface);
 loading_anime.appendChild(loading_svg);
 anime_interface.appendChild(loading_anime);
+    
+setTimeout(() => {
+    anime_interface.remove();
+}, 1500)
      
 </script>
 <!-- fixed element -->
