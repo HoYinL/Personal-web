@@ -39,11 +39,11 @@ svg.addEventListener(`pointerdown`, () => {
 })
 
 let scrollDefault = 0;
-document.addEventListener(`readystatechange`, () => {
+/*document.addEventListener(`readystatechange`, () => {
     setTimeout(() => {
         anime_interface.remove();
     }, 500)
-})
+})*/
 //-----------------------------------------------------------------------------------------//
 /*
 result: 1. click -> 2. scroll to specific section
