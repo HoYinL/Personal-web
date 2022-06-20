@@ -570,7 +570,7 @@ svg:hover path[d="M 22.5 2.5 L 2.5 12.5 L 2.5 42.5 L 22.5 52.5 L 42.5 42.5 L 42.
     width: 15rem; height:17.5rem;
     line-height: 17.5rem;
     border-radius: 5px;
-    background: url("./istockphoto-671826218-612x612 (1).jpg");
+    background: url("/Portfolio_image/istockphoto-671826218-612x612 (1).jpg");
     background-size: 100% 100%;
 }
 #face-icon:before{
