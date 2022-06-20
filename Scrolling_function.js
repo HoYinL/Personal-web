@@ -55,11 +55,12 @@ social_media.classList.add(`social-media-beforeAnimation`);
 setTimeout(() => {social_media.classList.replace(`social-media-beforeAnimation`, `social-media-afterAnimation`)}, 1000)
 
 window.addEventListener(`load`, ()=>{
+$(document).ready(function() {
+
     let includedContent3 = document.getElementById(`project`);
     let Project_files_container2 =  document.getElementById(`Project-files-container`);
     let Project_files_parents2 = Project_files_container2.children;
-$(document).ready(function() {
-
+    
     //Skill elements reveal independently
     let skill_title = document.getElementById(`skill-title`);
     let skill_intro = document.getElementById(`skill-intro`);
