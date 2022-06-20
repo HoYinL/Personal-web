@@ -14,7 +14,28 @@
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 <body>
+<script>
+let bodies = document.getElementsByTagName(`body`)[0];
 
+let anime_interface = document.createElement(`div`);
+let loading_anime = document.createElement('div');
+let loading_svg = document.createElementNS("http://www.w3.org/2000/svg", `svg`);
+loading_svg.setAttributeNS(null, `height`, `150`)
+loading_svg.setAttributeNS(null, `width`, `150`)
+loading_svg.setAttributeNS(null, `verison`, `1.1`)
+loading_svg.setAttributeNS(null, `position`, `relative`)
+let loading_path = document.createElementNS("http://www.w3.org/2000/svg", `path`);
+loading_path.setAttributeNS(null, `d`, `M 5 40 L 25 40 L 55 120 L 75 60 L 95 120 L 125 40 L 145 40`);
+loading_path.classList.add(`loading-path`);
+loading_svg.appendChild(loading_path);
+
+anime_interface.classList.add(`loading-interface`);
+loading_anime.classList.add(`loading-anime`);
+bodies.prepend(anime_interface);
+loading_anime.appendChild(loading_svg);
+anime_interface.appendChild(loading_anime);
+     
+</script>
 <!-- fixed element -->
 <!-- nav -->
 
@@ -181,8 +202,8 @@
 
 <script>
         ajaxLoads = {
-        "#includedContent": "./Portfolio_comonents/Workplace.html",
-        "#includedProject": "./Portfolio_comonents/Project.html",
+        "#includedContent": "./Portfolio_components/Workplace.html",
+        "#includedProject": "./Portfolio_components/Project.html",
         }
         $.each(ajaxLoads, function (div, url) {
             $(div).load(url);
