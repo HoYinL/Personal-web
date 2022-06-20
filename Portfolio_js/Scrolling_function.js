@@ -121,8 +121,8 @@ $(document).ready(function() {
         pageState[`files_inline`] = calFilesInLine(includedContent3, Project_files_parents2);
     })
     
-    introductionReveal();
     setTimeout(() => {
+        introductionReveal();
         section_store.forEach((section) => {
             let sec_idx = section_store.indexOf(section);
             let sec_state = section_store_state[section.id];
@@ -133,7 +133,7 @@ $(document).ready(function() {
             }
         })
         ScrollReveal().reveal(`#contact`, {distance: `150px`, distance: `50px`, origin: `bottom`, duration: 1000});
-    }, 1350)
+    }, 1250)
    
     //shouls decalre after DOMContentLoaded > some elements are inserted asynchronously
     let currentPosition = window.pageYOffset;
