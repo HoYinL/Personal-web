@@ -133,7 +133,7 @@ $(document).ready(function() {
             }
         })
         ScrollReveal().reveal(`#contact`, {distance: `150px`, distance: `50px`, origin: `bottom`, duration: 1000});
-    }, 1275)
+    }, 1250)
    
     //shouls decalre after DOMContentLoaded > some elements are inserted asynchronously
     let currentPosition = window.pageYOffset;
