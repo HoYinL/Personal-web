@@ -213,7 +213,7 @@ $(document).ready(function() {
         'https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80',
         //'../Portfolio_image/spotify-2.jpg',
         'https://bnextmedia.s3.hicloud.net.tw/image/album/2019-07/img-1563419830-89111@900.png',
-        './2021-09-01.png',
+        './2021-09-01.png.jpg',
     ]
         
     let box = document.getElementsByClassName("Project-box");
