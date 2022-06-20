@@ -22,7 +22,7 @@ let scrollDefault = 0;
 //document.addEventListener(`readystatechange`, () => {
     setTimeout(() => {
         anime_interface.remove();
-    }, 2500)
+    }, 1500)
 //})
 //-----------------------------------------------------------------------------------------//
 /*
