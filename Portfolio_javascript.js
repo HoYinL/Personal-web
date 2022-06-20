@@ -15,7 +15,7 @@ function scroll(){
 let bodies = document.getElementsByTagName(`body`)[0];
 
 let anime_interface = document.createElement(`div`);
-let loading_anime = document.createElement('div');
+/*let loading_anime = document.createElement('div');
 let loading_svg = document.createElementNS("http://www.w3.org/2000/svg", `svg`);
 loading_svg.setAttributeNS(null, `height`, `150`)
 loading_svg.setAttributeNS(null, `width`, `150`)
@@ -36,7 +36,7 @@ let svg = document.getElementById(`svg`);
 
 svg.addEventListener(`pointerdown`, () => {
     document.location.reload(true);
-})
+})*/
 
 let scrollDefault = 0;
 document.addEventListener(`readystatechange`, () => {
