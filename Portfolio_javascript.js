@@ -1,3 +1,4 @@
+console.log(`hi`)
 function getStyle(ele, attr) {
     if (window.getComputedStyle) {
         return window.getComputedStyle(ele).getPropertyValue(attr);
