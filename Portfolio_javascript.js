@@ -177,9 +177,9 @@ for(let workplace_details_page of workplace_details){
     workplace_details_page.classList.add(`hide-workplace-details`);
 }
 
-if(workplace_details[0] == undefined){
+/*if(workplace_details[0] == undefined){
     location.reload();
-}
+}*/
 workplace_details[0].classList.replace(`hide-workplace-details`, `show-workplace-details`);
 // click the content and show the border
 main.addEventListener("pointerdown", (event)=>{
