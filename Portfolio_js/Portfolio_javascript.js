@@ -11,27 +11,6 @@ function scroll(){
         right: window.pageXOffset || document.body.scrollLeft}
     }
 //-----------------------------------------------------------------------------------------//
-
-let bodies = document.getElementsByTagName(`body`)[0];
-
-let anime_interface = document.createElement(`div`);
-let loading_anime = document.createElement('div');
-let loading_svg = document.createElementNS("http://www.w3.org/2000/svg", `svg`);
-loading_svg.setAttributeNS(null, `height`, `150`)
-loading_svg.setAttributeNS(null, `width`, `150`)
-loading_svg.setAttributeNS(null, `verison`, `1.1`)
-loading_svg.setAttributeNS(null, `position`, `relative`)
-let loading_path = document.createElementNS("http://www.w3.org/2000/svg", `path`);
-loading_path.setAttributeNS(null, `d`, `M 5 40 L 25 40 L 55 120 L 75 60 L 95 120 L 125 40 L 145 40`);
-loading_path.classList.add(`loading-path`);
-loading_svg.appendChild(loading_path);
-
-anime_interface.classList.add(`loading-interface`);
-loading_anime.classList.add(`loading-anime`);
-bodies.prepend(anime_interface);
-loading_anime.appendChild(loading_svg);
-anime_interface.appendChild(loading_anime);
-
 let svg = document.getElementById(`svg`);
 
 svg.addEventListener(`pointerdown`, () => {
@@ -39,14 +18,9 @@ svg.addEventListener(`pointerdown`, () => {
 })
 
 let scrollDefault = 0;
-document.addEventListener(`readystatechange`, () => {
-    setTimeout(() => {
-        anime_interface.remove();
-    }, 500)
-})
 //-----------------------------------------------------------------------------------------//
 /*
-result: 1. click -> 2. scroll to specific section
+result: 1. click -> 2. scroll to a specific section
 */
 //-----------------------------------------------------------------------------------------//
 // scrolling navigation bar //
@@ -323,7 +297,7 @@ $(document).ready(function() {
         }
     })
 })})
-//-------------------- javascript for -conatiner ---------------------------//
+//-------------------- javascript for -container ---------------------------//
 
 //-------------------- footer ---------------------------//
 let info_block = document.getElementById("info-block");
