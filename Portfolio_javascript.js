@@ -79,11 +79,12 @@ window.addEventListener("scroll", () => {
 let main = document.getElementById("content");
 
 window.addEventListener("load", ()=>{
+    let workplace = document.getElementById("workplace");
+    let workplace_li = workplace.querySelectorAll(`li`);
+    
 $(document).ready(function() {
 let experience_sec = document.getElementById("experience")
-let workplace = document.getElementById("workplace");
 let includedContent = document.getElementById(`includedContent`);
-let workplace_li = workplace.querySelectorAll(`li`);
 let workplace_light = document.getElementById(`workplace-light`);
 let workplace_details = document.getElementsByClassName("workplace-details");
 
