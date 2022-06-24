@@ -56,15 +56,13 @@ setTimeout(() => {social_media.classList.replace(`social-media-beforeAnimation`,
 
 window.addEventListener(`load`, ()=>{
 $(document).ready(function() {
-    try{
-        let includedContent3 = document.getElementById(`project`);
-        let Project_files_container2 =  document.getElementById(`Project-files-container`);
-        let Project_files_parents2 = Project_files_container2.children;
-    } catch (error){
-        includedContent3 = document.getElementById(`project`);
+    let includedContent3 = document.getElementById(`project`);
+    let Project_files_container2 =  document.getElementById(`Project-files-container`);
+    let Project_files_parents2 = Project_files_container2.children;
+    if(!Project_files_container2){
         Project_files_container2 =  document.getElementById(`Project-files-container`);
-        Project_files_parents2 = Project_files_container2.children;
     }
+    
     
     //Skill elements reveal independently
     let skill_title = document.getElementById(`skill-title`);
