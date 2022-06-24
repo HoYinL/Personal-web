@@ -60,6 +60,7 @@ $(document).ready(function() {
     let Project_files_container2 =  document.getElementById(`Project-files-container`);
     let Project_files_parents2 = Project_files_container2.children;
     if(Project_files_container2 == null){
+        console.log(`jj`)
         reload();
     }
     
