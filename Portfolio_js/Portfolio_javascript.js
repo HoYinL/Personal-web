@@ -330,7 +330,11 @@ window.addEventListener("onload", ()=>{
 window.addEventListener(`load`, () => {
 $(document).ready(function() {
     let includedContent2 = document.getElementById(`project`);
-    let Project_files_container =  document.getElementById(`Project-files-container`);
+    let Project_files_container  =  document.getElementById(`Project-files-container`);
+    if(Project_files_container == null){
+      console.log(`no`);
+      reload();
+    }
     let Project_files_parents = Project_files_container.children;
 
     resize_modifyProjectFiles();
