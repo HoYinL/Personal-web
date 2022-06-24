@@ -333,7 +333,7 @@ $(document).ready(function() {
     let Project_files_container  =  document.getElementById(`Project-files-container`);
     if(Project_files_container == null){
       console.log(`no`);
-      reload();
+      location.reload();
     }
     let Project_files_parents = Project_files_container.children;
 
