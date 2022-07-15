@@ -1128,11 +1128,9 @@ ul#app-list li:hover{
 /*---------------------------------*/
 @media only screen and (min-width: 1450px){
     #content{
-        width: 1450px
-    }
-    body{
-        display: flex;
-        justify-content: center;
+        width: 1450px;
+        position: relative:
+        left: 50%; transform: translatex(-50%);
     }
 }
 @media only screen and (max-width: 1045px){
