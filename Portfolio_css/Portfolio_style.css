@@ -872,7 +872,7 @@ svg:hover path[d="M 22.5 2.5 L 2.5 12.5 L 2.5 42.5 L 22.5 52.5 L 42.5 42.5 L 42.
 #Project-files-container{
     /* files-flow */
     display: grid; grid-gap: 20px; grid-row-gap: 30px;
-    grid-template-columns: repeat(3, minmax(250px, 400px));
+    grid-template-columns: repeat(3, minmax(250px, 350px));
     grid-auto-rows: auto;
     grid-auto-flow: row;
     /* files-flow */
