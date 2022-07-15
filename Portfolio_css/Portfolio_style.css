@@ -858,6 +858,11 @@ svg:hover path[d="M 22.5 2.5 L 2.5 12.5 L 2.5 42.5 L 22.5 52.5 L 42.5 42.5 L 42.
 /* section 1. Main */
 
 /* section 2. Small  */
+#Noteworthy_proj{
+    width: 1000px;
+    position: relative;
+    left: 50%; transform: translateX(-50%);
+}
 #Noteworthy_proj h3{
     font-size: 1.5rem; 
     color: white; text-align: center;
@@ -1140,6 +1145,10 @@ ul#app-list li:hover{
     }
     .after-h2{
         height: 4vw;
+    }
+    #Noteworthy_proj{
+        width: auto;
+        left: 0; transform: translateX(0);
     }
 }
 @media only screen and (max-width: 800px) {
