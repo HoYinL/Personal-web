@@ -731,8 +731,8 @@ svg:hover path[d="M 22.5 2.5 L 2.5 12.5 L 2.5 42.5 L 22.5 52.5 L 42.5 42.5 L 42.
 }*/
 /* Section 1.1:  image */
 .Project-box figure{
-    width: 60%; height: 30vw;
-    line-height: 30vw;
+    width: 60%; height: 45vh;
+    line-height: 45vh;
     position: absolute; top: 50%; transform: translateY(-50%);
     cursor: pointer;
     text-align: center;
