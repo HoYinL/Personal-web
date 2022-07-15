@@ -859,7 +859,7 @@ svg:hover path[d="M 22.5 2.5 L 2.5 12.5 L 2.5 42.5 L 22.5 52.5 L 42.5 42.5 L 42.
 
 /* section 2. Small  */
 #Noteworthy_proj{
-    width: 1000px;
+    width: 1200px;
     position: relative;
     left: 50%; transform: translateX(-50%);
 }
