@@ -232,7 +232,7 @@ $(document).ready(function() {
             }
             */
             if(currentFileIndex > 5){
-                Project_files_cover[currentFileIndex].classList.add("Project-files-absolute");
+                //Project_files_cover[currentFileIndex].classList.add("Project-files-absolute");
                 //Project_files_cover[currentFileIndex].classList.add("Project-files-displayNone");
                 setTimeout(() => {  
                     //Project_files_cover[currentFileIndex].classList.add("Project-files-absolute");
