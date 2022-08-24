@@ -137,7 +137,7 @@ $(document).ready(function() {
         ScrollReveal().reveal(`#contact`, {distance: `150px`, distance: `50px`, origin: `bottom`, duration: 1000});
     }, 1250)*/
     
-    document.addEventListener('readystatechange', (e) => {
+    //document.addEventListener('readystatechange', (e) => {
         if(document.readyState == 'complete'){
             console.log('loaded')
             introductionReveal();
@@ -152,7 +152,7 @@ $(document).ready(function() {
             })
             ScrollReveal().reveal(`#contact`, {distance: `150px`, distance: `50px`, origin: `bottom`, duration: 1000});
         }
-    })
+    //})
    
     //shouls decalre after DOMContentLoaded > some elements are inserted asynchronously
     let currentPosition = window.pageYOffset;
