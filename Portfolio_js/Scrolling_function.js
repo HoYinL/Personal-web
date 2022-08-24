@@ -48,7 +48,7 @@ nav_list.forEach((ele) => {
     setTimeout(() => {
         ele.classList.replace(`nav-list-beforeAnime`, `nav-list-anime`);
         list_button.classList.contains(`nav-list-beforeAnime`)? list_button.classList.replace(`nav-list-beforeAnime`, `nav-list-anime`): null;
-    }, 1600 + 150*(nav_list.indexOf(ele)))
+    }, 250 + 150*(nav_list.indexOf(ele)))
 })
 //to-so stuff 2. set the first round of Scroll().reveal()
 social_media.classList.add(`social-media-beforeAnimation`);
