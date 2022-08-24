@@ -221,6 +221,16 @@ $(document).ready(function() {
         for(let ele of Project_files_cover){
             let currentFileIndex = Array.from(Project_files_cover).indexOf(ele);
 
+            /*
+            if(currentFileIndex > 5){
+                Project_files_cover[currentFileIndex].classList.add("Project-files-displayNone", );
+                setTimeout(() => {  
+                    Project_files_cover[currentFileIndex].classList.replace("Project-files-displayNone", "Project-files-absolute");
+                    Project_files_cover[currentFileIndex].classList.add("Project-files-opacity"); 
+                    Project_files_cover[currentFileIndex].classList.add("Project-files-transform"); 
+                }, 0) 
+            }
+            */
             if(currentFileIndex > 5){
                 Project_files_cover[currentFileIndex].classList.add("Project-files-displayNone");
                 setTimeout(() => {  
