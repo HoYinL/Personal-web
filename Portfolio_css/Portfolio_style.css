@@ -238,25 +238,20 @@ svg:hover path[d="M 22.5 2.5 L 2.5 12.5 L 2.5 42.5 L 22.5 52.5 L 42.5 42.5 L 42.
 }
 #Skill{
     position: relative;
-    //transition: top .75s, opacity .75s;
 }
 #Experience{
     position: relative;
-    //transition: top .75s, opacity .75s;
 }
 #Project1{
     position: relative;
-    //transition: top .75s, opacity .75s;
 }
 #Contact{
     position: relative;
-    //transition: top .75s, opacity .75s;
 }
 #resume{
     font-size: 1rem; line-height: 2.5rem; height:2.5rem; 
     padding:0 .5rem; margin:15px; 
     position: relative;
-    //transition: opacity .75s, top .75s;
 }
 /* nav_list elements */
 
@@ -276,7 +271,7 @@ svg:hover path[d="M 22.5 2.5 L 2.5 12.5 L 2.5 42.5 L 22.5 52.5 L 42.5 42.5 L 42.
     height:70px; width:80px;
     margin: 5px;
     position: absolute; right:0; z-index:99;
-    transition: top .75s, opacity .5s; cursor: pointer;
+    /*transition: top .75s, opacity .5s;*/ cursor: pointer;
 }
 .list-button-border{ /* list button border effect */
     border: 2px dashed var(--main--most--color);
