@@ -205,6 +205,7 @@ $(document).ready(function() {
 })
 })
 
+//For browser other than Firefox
 let Project_files_cover1 = document.getElementsByClassName("Project-files-Parents");
 for(let ele of Project_files_cover1){
     let currentFileIndex = Array.from(Project_files_cover1).indexOf(ele);
@@ -228,8 +229,11 @@ $(document).ready(function() {
         for(let ele of Project_files_cover){
             let currentFileIndex = Array.from(Project_files_cover).indexOf(ele);
 
+            //for Firefox
+            !Project_files_cover1[currentFileIndex].classList.contains("Project-files-displayNone") && 
+                Project_files_cover1[currentFileIndex].classList.add("Project-files-displayNone");
             if(currentFileIndex > 5){
-                Project_files_cover[currentFileIndex].classList.replace("Project-files-displayNone", "Project-files-absolute");
+                Project_files_cover1[currentFileIndex].classList.replace("Project-files-displayNone", "Project-files-absolute");
                 Project_files_cover[currentFileIndex].classList.add("Project-files-opacity"); 
                 Project_files_cover[currentFileIndex].classList.add("Project-files-transform"); 
             }
