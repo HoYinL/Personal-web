@@ -139,7 +139,6 @@ $(document).ready(function() {
     
     //document.addEventListener('readystatechange', (e) => {
         if(document.readyState == 'complete'){
-            console.log('loaded')
             introductionReveal();
             section_store.forEach((section) => {
                 let sec_idx = section_store.indexOf(section);
