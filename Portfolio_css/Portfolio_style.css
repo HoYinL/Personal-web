@@ -374,7 +374,7 @@ svg:hover path[d="M 22.5 2.5 L 2.5 12.5 L 2.5 42.5 L 22.5 52.5 L 42.5 42.5 L 42.
     height: 4rem; 
     margin-left: auto;
     text-align: right;
-    font-size: 1.25rem; line-height: 4rem; font-family:var(--main-arial-font); color: white;
+    font-size: 1.25rem; line-height: 4rem; font-family: var(--main--mono-font); color: white;
     transition: color .25s;
 } 
 #aside-bar ul > li[class="click-button"]{
