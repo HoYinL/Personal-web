@@ -151,9 +151,6 @@ for(let workplace_details_page of workplace_details){
     workplace_details_page.classList.add(`hide-workplace-details`);
 }
 
-/*if(workplace_details[0] == undefined){
-    location.reload();
-}*/
 workplace_details[0].classList.replace(`hide-workplace-details`, `show-workplace-details`);
 // click the content and show the border
 main.addEventListener("pointerdown", (event)=>{
@@ -208,6 +205,15 @@ $(document).ready(function() {
 })
 })
 
+let Project_files_cover1 = document.getElementsByClassName("Project-files-Parents");
+for(let ele of Project_files_cover1){
+    let currentFileIndex = Array.from(Project_files_cover1).indexOf(ele);
+
+    if(currentFileIndex > 5){
+        Project_files_cover1[currentFileIndex].classList.add("Project-files-displayNone");
+    }
+} 
+
 //-conatiner (Section 2)
 window.addEventListener("load", ()=>{
 $(document).ready(function() {
@@ -223,24 +229,11 @@ $(document).ready(function() {
             let currentFileIndex = Array.from(Project_files_cover).indexOf(ele);
 
             if(currentFileIndex > 5){
-                Project_files_cover[currentFileIndex].classList.add("Project-files-displayNone");
-                setTimeout(() => {  
-                    Project_files_cover[currentFileIndex].classList.replace("Project-files-displayNone", "Project-files-absolute");
-                    Project_files_cover[currentFileIndex].classList.add("Project-files-opacity"); 
-                    Project_files_cover[currentFileIndex].classList.add("Project-files-transform"); 
-                }, 0) 
+                Project_files_cover[currentFileIndex].classList.replace("Project-files-displayNone", "Project-files-absolute");
+                Project_files_cover[currentFileIndex].classList.add("Project-files-opacity"); 
+                Project_files_cover[currentFileIndex].classList.add("Project-files-transform"); 
             }
             
-            /*
-            if(currentFileIndex > 5){
-                //Project_files_cover[currentFileIndex].classList.add("Project-files-absolute");
-                //Project_files_cover[currentFileIndex].classList.add("Project-files-displayNone");
-                setTimeout(() => {  
-                    //Project_files_cover[currentFileIndex].classList.add("Project-files-absolute");
-                    Project_files_cover[currentFileIndex].classList.add("Project-files-opacity"); 
-                    Project_files_cover[currentFileIndex].classList.add("Project-files-transform"); 
-                }, 0) 
-            }*/
             Project_files_h4[currentFileIndex].classList.add("Project-files-h4-color"); 
             Project_files_h4[currentFileIndex].classList.add("Project-border");
         }   
@@ -344,7 +337,6 @@ $(document).ready(function() {
     let includedContent2 = document.getElementById(`project`);
     let Project_files_container  =  document.getElementById(`Project-files-container`);
     if(Project_files_container == null){
-      console.log(`no`);
       location.reload();
     }
     let Project_files_parents = Project_files_container.children;
