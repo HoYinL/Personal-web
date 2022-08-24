@@ -36,10 +36,16 @@ bodies.prepend(anime_interface);
 loading_anime.appendChild(loading_svg);
 anime_interface.appendChild(loading_anime);
     
-setTimeout(() => {
+/*setTimeout(() => {
     //document.getElementById(`content`).style.position = `relative`;
     anime_interface.remove();
-}, 1600)
+}, 1600)*/
+    
+document.addEventListener('readystatechange', (e) => {
+    if(document.readyState == 'complete'){
+        anime_interface.remove();
+    }
+})
      
 </script>
 <!-- fixed element -->
