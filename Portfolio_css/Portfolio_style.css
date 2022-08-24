@@ -268,10 +268,10 @@ svg:hover path[d="M 22.5 2.5 L 2.5 12.5 L 2.5 42.5 L 22.5 52.5 L 42.5 42.5 L 42.
 /* 1. clicks list-button */
 #list-button{
     display: none; box-sizing: content-box;
-    height:70px; width:80px;
+    height: 70px; width:80px;
     margin: 5px;
-    position: absolute; right:0; z-index:99;
-    /*transition: top .75s, opacity .5s;*/ cursor: pointer;
+    position: absolute; right:0; z-index: 99;
+    cursor: pointer;
 }
 .list-button-border{ /* list button border effect */
     border: 2px dashed var(--main--most--color);
@@ -386,6 +386,7 @@ svg:hover path[d="M 22.5 2.5 L 2.5 12.5 L 2.5 42.5 L 22.5 52.5 L 42.5 42.5 L 42.
     padding: 0 15px;
     font-family: 'FontAwesome';
     box-sizing: content-box;
+    letter-spacing: 1.5px;
 }
 #aside-bar ul > li[class="click-button"]:before{
     content:"";
