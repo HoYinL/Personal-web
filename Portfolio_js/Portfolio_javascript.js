@@ -219,9 +219,9 @@ let Show_hidden1 = document.getElementById("show-hidden");
             let currentFileIndex = Array.from(Project_files_cover1).indexOf(ele);
 
             if(currentFileIndex > 5){
-                Project_files_cover1[currentFileIndex].classList.add("Project-files-displayNone");
+                Project_files_cover1[currentFileIndex].classList.add("Project-files-absolute");
                 setTimeout(() => {  
-                    Project_files_cover1[currentFileIndex].classList.replace("Project-files-displayNone", "Project-files-absolute");
+                    //Project_files_cover1[currentFileIndex].classList.replace("Project-files-displayNone", "Project-files-absolute");
                     Project_files_cover1[currentFileIndex].classList.add("Project-files-opacity"); 
                     Project_files_cover1[currentFileIndex].classList.add("Project-files-transform"); 
                 }, 0) 
