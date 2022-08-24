@@ -37,9 +37,9 @@ loading_anime.appendChild(loading_svg);
 anime_interface.appendChild(loading_anime);
     
 window.addEventListener('load', (e) => {
-    //if(document.readyState == 'complete'){
+    setTimeout(() => {
         anime_interface.remove();
-    //}
+    }, 0)
 })
      
 </script>
