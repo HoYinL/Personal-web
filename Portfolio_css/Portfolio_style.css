@@ -387,9 +387,13 @@ svg:hover path[d="M 22.5 2.5 L 2.5 12.5 L 2.5 42.5 L 22.5 52.5 L 42.5 42.5 L 42.
     font-size: 1.25rem; font-family:var(--main-arial-font);
     box-sizing: border-box;
     transition: background-color .5s;
+    padding: 0 15px;
+    font-family: 'FontAwesome';
+    box-sizing: content-box;
 }
 #aside-bar ul > li[class="click-button"]:before{
     content:"";
+    display: 'none';
 }
 #aside-bar ul > li[class="click-button"]:hover{
     color: white;
