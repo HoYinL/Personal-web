@@ -59,10 +59,7 @@ $(document).ready(function() {
     let includedContent3 = document.getElementById(`project`);
     let Project_files_container2 =  document.getElementById(`Project-files-container`);
     let Project_files_parents2 = Project_files_container2.children;
-    if(Project_files_container2 == null){
-        console.log(`jj`)
-        location.reload();
-    }
+    Project_files_container2 == null && location.reload();
     
     
     //Skill elements reveal independently
@@ -126,7 +123,7 @@ $(document).ready(function() {
         pageState[`files_inline`] = calFilesInLine(includedContent3, Project_files_parents2);
     })
     
-    setTimeout(() => {
+    /*setTimeout(() => {
         introductionReveal();
         section_store.forEach((section) => {
             let sec_idx = section_store.indexOf(section);
@@ -138,7 +135,23 @@ $(document).ready(function() {
             }
         })
         ScrollReveal().reveal(`#contact`, {distance: `150px`, distance: `50px`, origin: `bottom`, duration: 1000});
-    }, 1250)
+    }, 1250)*/
+    
+    document.addEventListener('readystatechange', () => {
+        if(document.readyState == 'interactive'){
+            introductionReveal();
+            section_store.forEach((section) => {
+                let sec_idx = section_store.indexOf(section);
+                let sec_state = section_store_state[section.id];
+                if(Array.isArray(sec_state)){
+                    arraySectionList[sec_idx].forEach((ele) => {
+                        ScrollReveal().reveal(`#${ele.id}`, returnRevealEffect(sec_idx, sec_state.length - 1,  arraySectionList[sec_idx].indexOf(ele), pageState[`files_inline`]))
+                    })
+                }
+        })
+        ScrollReveal().reveal(`#contact`, {distance: `150px`, distance: `50px`, origin: `bottom`, duration: 1000});
+        }
+    })
    
     //shouls decalre after DOMContentLoaded > some elements are inserted asynchronously
     let currentPosition = window.pageYOffset;
