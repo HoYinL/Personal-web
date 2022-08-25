@@ -124,17 +124,17 @@ $(document).ready(function() {
     })
     
     if(document.readyState == 'complete'){
-       introductionReveal();
-       section_store.forEach((section) => {
-          let sec_idx = section_store.indexOf(section);
-          let sec_state = section_store_state[section.id];
-          if(Array.isArray(sec_state)){
-             arraySectionList[sec_idx].forEach((ele) => {
-                ScrollReveal().reveal(`#${ele.id}`, returnRevealEffect(sec_idx, sec_state.length - 1,  arraySectionList[sec_idx].indexOf(ele), pageState[`files_inline`]))
-             })
-          }
-       })
-       ScrollReveal().reveal(`#contact`, {distance: `150px`, distance: `50px`, origin: `bottom`, duration: 1000});
+        introductionReveal();
+        section_store.forEach((section) => {
+            let sec_idx = section_store.indexOf(section);
+            let sec_state = section_store_state[section.id];
+            if(Array.isArray(sec_state)){
+                arraySectionList[sec_idx].forEach((ele) => {
+                    ScrollReveal().reveal(`#${ele.id}`, returnRevealEffect(sec_idx, sec_state.length - 1,  arraySectionList[sec_idx].indexOf(ele), pageState[`files_inline`]))
+              })
+            }
+         })
+         ScrollReveal().reveal(`#contact`, {distance: `150px`, distance: `50px`, origin: `bottom`, duration: 1000});
     }
    
     //shouls decalre after DOMContentLoaded > some elements are inserted asynchronously
@@ -310,6 +310,19 @@ list_button.addEventListener("pointerdown", (e)=>{
         setTimeout(() => {list_box.classList.replace(`list-box-afterModification`, `list-box-origin`);}, 100)
     }
 
+    main22.addEventListener('click', function(){
+        click_cross(list_box, rotated_cross, aside_bar, html, main22)
+        setTimeout(() => {list_box.classList.replace(`list-box-afterModification`, `list-box-origin`)}, 100)
+
+        list_button.classList.replace("list-button-border", "list-button-noborder");
+
+        main22.removeEventListener('click', function(){
+            click_cross(list_box, rotated_cross, aside_bar, html, main22)
+            setTimeout(() => {list_box.classList.replace(`list-box-afterModification`, `list-box-origin`)}, 100)
+
+            list_button.classList.replace("list-button-border", "list-button-noborder");
+        })
+    })
     // case 1 > only clicked + resize(>800) triggers case 1
     window.addEventListener("resize", ()=>{
         if(window.innerWidth == 800){
