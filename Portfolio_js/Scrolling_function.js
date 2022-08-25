@@ -123,21 +123,19 @@ $(document).ready(function() {
         pageState[`files_inline`] = calFilesInLine(includedContent3, Project_files_parents2);
     })
     
-    //document.addEventListener('readystatechange', (e) => {
-        if(document.readyState == 'complete'){
-            introductionReveal();
-            section_store.forEach((section) => {
-                let sec_idx = section_store.indexOf(section);
-                let sec_state = section_store_state[section.id];
-                if(Array.isArray(sec_state)){
-                    arraySectionList[sec_idx].forEach((ele) => {
-                        ScrollReveal().reveal(`#${ele.id}`, returnRevealEffect(sec_idx, sec_state.length - 1,  arraySectionList[sec_idx].indexOf(ele), pageState[`files_inline`]))
-                    })
-                }
-            })
-            ScrollReveal().reveal(`#contact`, {distance: `150px`, distance: `50px`, origin: `bottom`, duration: 1000});
-        }
-    //})
+    if(document.readyState == 'complete'){
+       introductionReveal();
+       section_store.forEach((section) => {
+          let sec_idx = section_store.indexOf(section);
+          let sec_state = section_store_state[section.id];
+          if(Array.isArray(sec_state)){
+             arraySectionList[sec_idx].forEach((ele) => {
+                ScrollReveal().reveal(`#${ele.id}`, returnRevealEffect(sec_idx, sec_state.length - 1,  arraySectionList[sec_idx].indexOf(ele), pageState[`files_inline`]))
+             })
+          }
+       })
+       ScrollReveal().reveal(`#contact`, {distance: `150px`, distance: `50px`, origin: `bottom`, duration: 1000});
+    }
    
     //shouls decalre after DOMContentLoaded > some elements are inserted asynchronously
     let currentPosition = window.pageYOffset;
