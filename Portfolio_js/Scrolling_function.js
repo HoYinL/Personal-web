@@ -325,7 +325,7 @@ list_button.addEventListener("pointerdown", (e)=>{
     })
     // case 1 > only clicked + resize(>800) triggers case 1
     window.addEventListener("resize", ()=>{
-        if(window.innerWidth == 800){
+        if(window.innerWidth >= 800 && list_box.classList.contains(`list-box-beforeModification`)){
         // Remove all css click effect class
         list_box.classList.remove(`list-box-beforeModification`, `list-box-origin`);
         rotated_cross.classList.remove(`rotated-cross-beforeModification`, `rotated-cross-origin`);
