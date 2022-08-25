@@ -504,7 +504,7 @@ svg:hover path[d="M 22.5 2.5 L 2.5 12.5 L 2.5 42.5 L 22.5 52.5 L 42.5 42.5 L 42.
 #self-intro{
     width:60%;
     font-size: 1rem; line-height: 1.5rem; 
-    margin: 1rem 0;
+    padding: 1rem 0;
     color:grey;
 }
 #touch{
