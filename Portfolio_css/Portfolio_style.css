@@ -777,8 +777,7 @@ svg:hover path[d="M 22.5 2.5 L 2.5 12.5 L 2.5 42.5 L 22.5 52.5 L 42.5 42.5 L 42.
 }
 .Project-box .Project-details h4:before{
     content: "Featured ";
-    height: 3.5rem; 
-    font-size: 1rem; line-height: 1.5rem; 
+    font-size: 1rem;
     font-family: var(--main--mono-font); font-weight: 400; 
     color: var(--main--most--color); 
 }
@@ -1309,6 +1308,7 @@ ul#app-list li:hover{
     }
     .Project-box .Project-details h4{
         text-align: center;
+        justify-content: 'center';
     }
     .Project-box .Project-details p{
         width: 100%;
