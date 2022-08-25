@@ -608,6 +608,7 @@ svg:hover path[d="M 22.5 2.5 L 2.5 12.5 L 2.5 42.5 L 22.5 52.5 L 42.5 42.5 L 42.
     position: relative;
     left: 50%; transform: translateX(-50%);
     display: flex; flex-wrap: wrap;
+    justify-content: space-between;
     /*responsive-box and fixed content > fixed width + % position/padding/margin*/
 }/*whole-container*/
 
