@@ -1,4 +1,4 @@
-import {modifyElementState, scrollToSection, returnRevealEffect, plainReveal} from "./module.js";
+import { modifyElementState, scrollToSection, returnRevealEffect, plainReveal } from "./module.js";
 
 let introduction = document.getElementById(`introducion`);
 let skill = document.getElementById(`skill`);
