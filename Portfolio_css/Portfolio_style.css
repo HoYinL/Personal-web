@@ -494,7 +494,7 @@ svg:hover path[d="M 22.5 2.5 L 2.5 12.5 L 2.5 42.5 L 22.5 52.5 L 42.5 42.5 L 42.
     font-family: var(--main--mono-font), Helvetica, sans-serif; color: white;
 }
 #name{
-    font-size:8vw; 
+    font-size:8vh; 
     font-weight: bold; color: rgb(13, 241, 173);
 }
 #brief{
