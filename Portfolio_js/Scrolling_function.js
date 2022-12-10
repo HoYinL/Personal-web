@@ -155,7 +155,7 @@ $(document).ready(function() {
         modifyElementState(`skill`, ...paraSet, skill_list);
         break;
     case 3:
-        if(currentPosition + window.innerWidth/2 > Project.offsetTop){
+        if(currentPosition + window.innerWidth/2 > Projects.offsetTop){
             modifyElementState(`project`, ...paraSet, Projects_list);
         }
         modifyElementState(`experience`, ...paraSet, experience_list);
