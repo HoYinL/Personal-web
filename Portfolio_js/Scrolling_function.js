@@ -224,7 +224,7 @@ function scrollWithoutClickingNav(currentPosition, section_store){
     if((count[1] == 0 && currentPosition + b >= section_store[1].offsetTop) && (currentPosition + b <= section_store[2].offsetTop)){
         modifyElementState(`skill`, ...paraSet, skill_list);
         if((section_store_state[`skill`]).every( (val, i, arr) => val === 2 )){
-            count[3] = 1;
+            count[1] = 1;
             return
         } 
     }
